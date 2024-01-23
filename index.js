@@ -11,7 +11,8 @@ const port = 4000;
 app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
-mongoose.connect("mongodb://127.0.0.1:27017/ecommerce-mern")
+// mongoose.connect("mongodb://127.0.0.1:27017/ecommerce-mern")
+mongoose.connect("mongodb+srv://rasiyajishar1:a0cXkTgYzwanWGJV@cluster0.k0zfflp.mongodb.net/")
   .then(() => {
     console.log("MongoDB connected");
   })
